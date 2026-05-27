@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "TerraformPraticeArea"
+    workspaces {
+      name = "aws-starter-project"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
